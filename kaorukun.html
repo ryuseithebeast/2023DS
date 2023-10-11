@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #message {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <button id="showMessageButton">ボタンを押す</button>
+    <p id="message"></p>
+
+    <script>
+        // ボタン要素を取得
+        var button = document.getElementById('showMessageButton');
+        // メッセージ要素を取得
+        var message = document.getElementById('message');
+
+        // ボタンがクリックされたときの処理を設定
+        button.addEventListener('click', function() {
+            // メッセージを表示し、金色に変更
+            message.textContent = '助けが必要みたいだね。';
+        });
+    </script>
+</body>
+</html>
